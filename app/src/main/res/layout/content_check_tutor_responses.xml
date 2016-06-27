@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10sp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lnrRplyFrom">
+    <TextView
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        android:textColor="@color/ColorHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/replyFrom"
+        android:text="Reply from "/>
+        <TextView android:id="@+id/tResTutorName"
+            android:textSize="15sp"
+            android:textColor="@color/ColorHeading"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/replyFrom"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+        <TextView android:id="@+id/tDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ColorPrimaryDark"
+        android:textSize="14sp"
+
+        android:layout_below="@+id/lnrRplyFrom"
+        />
+
+             <TextView android:id="@+id/tReplysDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/list_background"
+            android:textSize="14sp"
+
+                 android:layout_below="@+id/tDepartment"
+                 android:visibility="gone"
+            />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/showTime"
+        android:layout_below="@+id/tReplysDate"
+        android:visibility="gone">
+    <TextView android:id="@+id/tReplySTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/list_background"
+        android:textSize="14sp"
+
+
+        />
+
+    <TextView android:id="@+id/tReplyETime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/list_background"
+        android:textSize="14sp"
+
+
+        />
+    </LinearLayout>
+    <TextView android:id="@+id/tReplyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ColorPrimary"
+        android:textSize="14sp"
+        android:padding="5sp"
+        android:layout_below="@+id/showTime"
+        />
+        <TextView android:id="@+id/tReplyStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/star_color"
+            android:layout_below="@+id/tReplyMessage"
+            android:textSize="14sp"
+            />
+
+
+
+
+</RelativeLayout>

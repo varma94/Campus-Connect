@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15sp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/evnttitle">
+
+        <TextView android:id="@+id/tName"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/ColorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView android:id="@+id/hidden_dept_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView android:id="@+id/tSubjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tName"
+            android:textSize="15sp"
+            android:textColor="@color/ColorHeading"
+
+            />
+
+        <RatingBar
+            android:layout_width="235dp"
+            android:layout_height="50dp"
+            android:id="@+id/rtgTutor"
+            android:isIndicator="true"
+            android:layout_marginRight="-50sp"
+            android:numStars="5"
+            android:stepSize="1"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:progressTint="@color/star_color"
+            android:progressBackgroundTint="@color/star_color"
+            android:secondaryProgressTint="@color/star_color"
+             android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/evnttitle">
+
+
+        <Button android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnTtrReq"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+
+            android:padding="5pt"
+            android:background="@drawable/trequest_icon"
+            android:textColor="@color/ColorPrimary"></Button>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/btnTtrReq"
+
+            android:id="@+id/txtReqSent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@drawable/going_icon"
+            android:textColor="@color/cardview_shadow_start_color"></TextView>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/rateTutor"
+android:background="@drawable/rate_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="5pt"
+            android:gravity="center_vertical"
+            android:textColor="@color/ColorPrimary"
+
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
